@@ -1,0 +1,1 @@
+deno compile --allow-read --allow-net --unstable main.ts --output=smsc
