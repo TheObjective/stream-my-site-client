@@ -1,0 +1,1 @@
+deno publish --allow-read --allow-net --unstable --unlisted
