@@ -109,7 +109,8 @@ async function handleMessage(ws: WebSocket, data: string) {
             } else {
                 console.log(`deployed to https://${LIVE_DOMAIN}/${DOMAIN}`)
             }
-            return;    
+            return;   
+
         case "signoff":
             if (request.error){
                 throw new Error(`${request}`);
@@ -117,6 +118,7 @@ async function handleMessage(ws: WebSocket, data: string) {
                 console.log(`signoff https://${LIVE_DOMAIN}/${DOMAIN} successful`)
             }
             break;
+            
         default:
             break;
     }
