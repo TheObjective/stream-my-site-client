@@ -60,7 +60,7 @@ function handleConnect(){
 function handleDisconnect(){
     try {
         const ws = new WebSocket(URL);
-        ws.onopen = () => {
+        ws.onopen = () => {  
             ws.send(preProcess({
                 context: "signoff"
             }));
